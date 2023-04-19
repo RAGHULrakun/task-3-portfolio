@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import css from "./Header.module.scss";
-import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
+import { BiPhoneCall, BiMenuAltRight, } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
@@ -27,20 +28,27 @@ const Header = () => {
       style={{boxShadow: headerShadow}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Binjan</div>
+        <div className={css.name}>Sampal Raj</div>
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
         >
           <li><a href="#experties">Services</a></li>
-          <li><a href="#work">Experience</a></li>
+          <li><a href="#work">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#people">Testimonials</a></li>
+          <li><a href="#people">Team</a></li>
+          <li><a href="https://www.canva.com/design/DAFYlWnhUVo/IagiMjXMYH9VIXs3wwsXug/view?utm_content=DAFYlWnhUVo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">view cv</a></li>
           <li className={`flexCenter ${css.phone}`}>
-            <p>+001 (313) 345 678</p>
+            <p>+91 84288-07480</p>
             <BiPhoneCall size={"40px"} />
           </li>
+          <li className={`flexCenter ${css.phone}`}>
+            <a href="https://github.com/Sampalraj">
+            <BsGithub size={"40px"} />
+            </a>
+          </li>
+          
         </ul>
 
         {/* for medium and small screens */}

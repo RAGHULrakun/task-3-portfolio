@@ -21,14 +21,16 @@ const Portfolio = () => {
             <span className="primaryText">My Latest Works</span>
             <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
           </div>
-          <span className="secondaryText">Explore More Works</span>
+          <a href="https://github.com/Sampalraj"><span className="secondaryText">Explore More Works</span></a>
         </motion.div>
 
 
         <div className={`flexCenter ${css.showCase}`}>
-            <motion.img variants={fadeIn("up", "tween", .5, .6)} src="./showCase1.png" alt="project" />
-            <motion.img variants={fadeIn("up", "tween", .7, .6)} src="./showCase2.png" alt="project" />
-            <motion.img variants={fadeIn("up", "tween", .9, .6)} src="./showCase3.png" alt="project" />
+            <a href="https://sampalraj.github.io/News-homepage/"><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./ss1.png" alt="project" /></a>
+            <a href="https://sampalraj.github.io/portofilio-testpage/"><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./ss2.png" alt="project" /></a>
+            <a href="https://sampalraj.github.io/calculater/"><motion.img variants={fadeIn("up", "tween", .5, .6)} src="./ss3.png" alt="project" /></a>
+            <a href="https://sampalraj.github.io/Interactive-card-details/"><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./ss4.png" alt="project" /></a>
+            <a href="https://sampalraj.github.io/Product-preview-card-component/"><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./ss5.png" alt="project" /></a>
         </div>
       </div>
     </motion.section>
